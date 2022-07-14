@@ -1,0 +1,39 @@
+.main-container {
+  background-color: #161624;
+  height: 150vh;
+}
+
+.status {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #334155;
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.country-visit-board {
+  overflow-y: scroll;
+  height: 40%;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+}
+.visited-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.no-countries{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+    height:40vh;
+}
+.visited-countries{
+    height:50;
+}

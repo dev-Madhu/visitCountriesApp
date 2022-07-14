@@ -1,0 +1,43 @@
+
+.status-btn {
+  height: 36px;
+  width: 90px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  outline: none;
+ 
+}
+.status {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #334155;
+  font-weight: 400;
+}
+
+
+.country-item {
+  border: 1px solid #334155;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-right: 20px;
+  margin:10px;
+}
+.country {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f8fafc;
+  font-family: 'Roboto';
+}
