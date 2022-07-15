@@ -80,8 +80,17 @@ const initialCountriesList = [
 class VisitCountries extends Component {
   state = {countriesList: initialCountriesList, visitedList: []}
 
-  onClickVisited = id => {
+  componentDidMount() {
+    this.getVisitedList()
+  }
+
+  getVisitedList = () => {
     const {countriesList} = this.state
+    const updated = countriesList.filter(each => each.isVisited === true)
+    this.setState({visitedList: updated})
+  }
+
+  onClickVisited = id => {
     this.setState(prevState => ({
       countriesList: [
         ...prevState.countriesList.map(each => {
@@ -101,7 +110,6 @@ class VisitCountries extends Component {
   }
 
   deleteVisitedPlace = id => {
-    const {visitedList, countriesList} = this.state
     this.setState(prevState => ({
       visitedList: [...prevState.visitedList.filter(each => each.id !== id)],
     }))
@@ -119,7 +127,6 @@ class VisitCountries extends Component {
 
   render() {
     const {countriesList, visitedList} = this.state
-    console.log(visitedList)
     const visitedCountries = visitedList.length === 0
     return (
       <div className="main-container">
